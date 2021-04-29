@@ -1,11 +1,42 @@
 import React from "react";
-import styled from "styled-components";
+import { GiHamburgerMenu } from "react-icons/gi";
+import {
+  Nav,
+  NavWrapper,
+  Logo,
+  Hamburger,
+  NavMenu,
+  NavItem,
+  NavLinks,
+} from "./NavStyles";
 
 const Navbar = () => {
   return (
-    <div>
-      <h1>From Navbar</h1>
-    </div>
+    <>
+      <Nav>
+        <NavWrapper>
+          {/* here, Logo is a react-router link */}
+          <Logo to="/">Dona</Logo>
+          <Hamburger>
+            <GiHamburgerMenu />
+          </Hamburger>
+          <NavMenu>
+            <NavItem>
+              <NavLinks to="about">About</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="skills">Skills</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="projects">Projects</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="contact">Contact</NavLinks>
+            </NavItem>
+          </NavMenu>
+        </NavWrapper>
+      </Nav>
+    </>
   );
 };
 
