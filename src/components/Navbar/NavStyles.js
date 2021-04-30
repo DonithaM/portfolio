@@ -6,7 +6,7 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 2;
-  background: #000;
+  background: var(--deep-blue);
   height: 50px;
   display: flex;
   justify-content: center;
@@ -46,7 +46,7 @@ export const Hamburger = styled.div`
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 60%);
+    transform: translate(-100%, 50%); //
     cursor: pointer;
     font-size: 1.5rem;
     color: #fff;
@@ -75,8 +75,14 @@ export const NavLinks = styled(LinkScroll)`
   text-decoration: none;
   padding: 0 1rem;
   cursor: pointer;
+  transition: 0.2s ease-in-out; //for out
 
   &.active {
     border-bottom: 3px solid red;
+  }
+
+  &:hover {
+    color: var(--bright-pink);
+    transition: 0.2s ease-in-out; //both in and out
   }
 `;
