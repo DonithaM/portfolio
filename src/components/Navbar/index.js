@@ -10,14 +10,14 @@ import {
   NavLinks,
 } from "./NavStyles";
 
-const Navbar = () => {
+const Navbar = ({ toggleMenu }) => {
   return (
     <>
       <Nav>
         <NavWrapper>
           {/* here, Logo is a react-router link */}
           <Logo to="/">Dona</Logo>
-          <Hamburger>
+          <Hamburger onClick={toggleMenu}>
             <GiHamburgerMenu />
           </Hamburger>
           <NavMenu>
