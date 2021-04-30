@@ -1,6 +1,7 @@
 import React from "react";
 import { HeroWrapper, BtnWrapper, Content, H1, P, Div } from "./HeroStyles";
 //import Video from "../../bgVideo/video.mp4";
+
 import { BsArrowDown } from "react-icons/bs";
 
 const Hero = () => {

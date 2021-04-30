@@ -1,8 +1,10 @@
 import styled from "styled-components";
+import bg from "../../images/bg.jpg";
 
 export const HeroWrapper = styled.div`
   background: var(--light-bg);
-  height: 800px;
+  height: 100vh;
+  background: url(${bg}) center center / cover;
   //
   display: flex;
   justify-content: center;
