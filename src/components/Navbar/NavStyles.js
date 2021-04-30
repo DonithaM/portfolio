@@ -8,10 +8,12 @@ export const Nav = styled.nav`
   z-index: 2;
   background: var(--deep-blue);
   height: 50px;
+  margin-top: -50px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
+  border-bottom: 3px solid var(--bright-pink);
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;

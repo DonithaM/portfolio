@@ -4,7 +4,7 @@ import GlobalStyles from "./GlobalStyles";
 import styled from "styled-components";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-import Home from "./pages/Home";
+import Home from "./pages";
 
 const App = () => {
   return (
