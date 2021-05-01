@@ -1,5 +1,5 @@
 import React from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { GiHamburgerMenu, GiTechnoHeart } from "react-icons/gi";
 import {
   Nav,
   NavWrapper,
@@ -16,7 +16,9 @@ const Navbar = ({ toggleMenu }) => {
       <Nav>
         <NavWrapper>
           {/* here, Logo is a react-router link */}
-          <Logo to="/">Dona</Logo>
+          <Logo to="/">
+            <GiTechnoHeart />
+          </Logo>
           <Hamburger onClick={toggleMenu}>
             <GiHamburgerMenu />
           </Hamburger>

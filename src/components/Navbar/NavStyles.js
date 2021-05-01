@@ -4,9 +4,11 @@ import { Link as LinkScroll } from "react-scroll";
 
 export const Nav = styled.nav`
   position: sticky;
+  backdrop-filter: blur(8px);
   top: 0;
-  z-index: 2;
-  background: var(--deep-blue);
+  z-index: 20;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(256, 204, 172, 0.45); /* Black w/opacity/see-through */
   height: 50px;
   margin-top: -50px;
   display: flex;
@@ -33,25 +35,32 @@ export const NavWrapper = styled.div`
 export const Logo = styled(LinkRouter)`
   display: flex;
   align-items: center;
-  color: #fff;
+  color: var(--bright-pink);
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-decoration: none;
   font-weight: bold;
 `;
 
 export const Hamburger = styled.div`
   display: none;
+  font-size: 2rem;
   @media screen and (max-width: 768px) {
     display: block;
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 50%); //
+    transform: translate(-100%, 20%); //
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #fff;
+    transition: 0.3s ease-in-out;
+  }
+
+  &:hover {
+    color: var(--bright-pink);
+    transition: 0.2s ease-in-out; //both in and out
   }
 `;
 
@@ -70,7 +79,9 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkScroll)`
-  color: #fff;
+  color: var(--deep-blue);
+  font-size: 20px;
+  font-weight: bold;
   display: flex;
   align-items: center;
   height: 100%;
