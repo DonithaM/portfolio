@@ -51,8 +51,6 @@ export const Content = styled.div`
   justify-content: center;
   align-items: center;
   max-width: 1200px;
-  position: absolute;
-  /* padding: 8px 24px; // */
 
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.45); /* Black w/opacity/see-through */
@@ -69,6 +67,18 @@ export const Content = styled.div`
   padding: 20px;
   text-align: center;
   margin-bottom: 20px;
+  @media screen and (max-width: 1200px) {
+    top: 62%;
+    width: 70%;
+  }
+  @media screen and (max-width: 768px) {
+    top: 62%;
+    width: 70%;
+  }
+
+  @media screen and (max-width: 500px) {
+    top: 58%;
+  }
 `;
 
 export const H1 = styled.h1`
@@ -110,10 +120,12 @@ export const P2 = styled.p`
   text-align: center;
 
   @media screen and (max-width: 768px) {
+    margin-top: 12px;
     font-size: 13px;
   }
 
   @media screen and (max-width: 500px) {
+    margin-top: 12px;
     font-size: 12px;
   }
 `;
@@ -131,12 +143,12 @@ export const BtnWrapper = styled.div`
   font-size: 40px;
   cursor: pointer;
   @media screen and (max-width: 768px) {
-    margin-top: 30px;
-    font-size: 35px;
+    margin-top: 10px;
+    font-size: 27px;
   }
 
   @media screen and (max-width: 500px) {
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 27px;
   }
 `;

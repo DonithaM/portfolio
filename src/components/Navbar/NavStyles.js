@@ -54,7 +54,7 @@ export const Hamburger = styled.div`
     transform: translate(-100%, 20%); //
     cursor: pointer;
     font-size: 2rem;
-    color: #fff;
+    color: var(--green);
     transition: 0.3s ease-in-out;
   }
 

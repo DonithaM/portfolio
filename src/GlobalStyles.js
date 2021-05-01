@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 export default createGlobalStyle`
 :root {
       --font-family: 'Cabin', sans-serif;
-      --primary-magenta: #b5179e;
+      --green: #3d6f38;
       --bright-pink: #f72585;
       --body-pink:#ffc2e2;
       --deep-blue: #0e2036;
@@ -34,6 +34,17 @@ html, body, div, span, applet, object, iframe,
     position: relative; //to fix sticky header and footer positions
     /* overflow: hidden;  */
   }
+
+  body::-webkit-scrollbar {
+  width: 10px;               /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: #ffeee3;        /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #f72585;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+}
 
 /* GLOBAL STYLES */
 *,

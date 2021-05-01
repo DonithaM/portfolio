@@ -9,7 +9,7 @@ export const SidebarWrapper = styled.aside`
   left: 0;
   z-index: 100;
   width: 100%;
-  height: 40%;
+  height: 30%;
   background: rgb(255, 204, 172);
   background: linear-gradient(
     180deg,
@@ -48,16 +48,16 @@ export const MenuWrapper = styled.div`
 export const SidebarMenu = styled.ul`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 50px); //
+  grid-template-rows: repeat(4, 40px); //
   text-align: center;
 
   @media screen and (max-width: 480px) {
-    grid-template-rows: repeat(4, 50px); //
+    grid-template-rows: repeat(4, 40px); //
   }
 `;
 
 export const SidebarLink = styled(LinkScroll)`
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   text-decoration: none;
   list-style: none;
   color: #fff;
