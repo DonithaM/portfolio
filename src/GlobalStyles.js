@@ -7,7 +7,8 @@ export default createGlobalStyle`
       --bright-pink: #f72585;
       --body-pink:#ffc2e2;
       --deep-blue: #0e2036;
-      --light-bg: #c9fbff;
+      --light-bg: #ffeee3;
+      --peach: #ffccac;
     }
 html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,

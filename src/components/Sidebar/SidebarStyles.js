@@ -7,10 +7,15 @@ export const SidebarWrapper = styled.aside`
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 100;
   width: 100%;
-  height: 100%;
-  background: var(--deep-blue);
+  height: 40%;
+  background: rgb(255, 204, 172);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 204, 172, 1) 10%,
+    rgba(191, 191, 191, 1) 90%
+  );
   display: grid;
   align-items: center;
   transition: 0.3s ease-in-out;
@@ -20,6 +25,11 @@ export const SidebarWrapper = styled.aside`
 
 export const CloseIcon = styled(FaTimes)`
   color: #fff;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    color: var(--bright-pink);
+    transition: 0.2s ease-in-out;
+  }
 `;
 
 export const Icon = styled.div`
@@ -47,7 +57,7 @@ export const SidebarMenu = styled.ul`
 `;
 
 export const SidebarLink = styled(LinkScroll)`
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   text-decoration: none;
   list-style: none;
   color: #fff;
