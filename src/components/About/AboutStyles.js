@@ -103,9 +103,10 @@ export const Span = styled.span`
 export const ProfileColumn = styled.div`
   background: linear-gradient(rgba(256, 204, 172, 0.1), rgba(0, 0, 0, 0.1)),
     url(${profile}) no-repeat;
-  border-right: 12px solid var(--bright-pink);
-  padding: 15px;
-  margin: 18px;
+  border-right: 12px solid var(--green);
+  border-left: 12px solid #fff;
+  /* padding: 15px; */
+  /* margin: 18px; */
   border-radius: 50%;
   height: 370px;
   min-width: 280px;
@@ -139,7 +140,7 @@ export const SkillLogos = styled.div`
   display: flex;
   justify-content: space-evenly;
   max-width: 600px;
-  color: #3d6f38;
+  color: var(--green);
 
   @media screen and (max-width: 768px) {
     width: 100%;
