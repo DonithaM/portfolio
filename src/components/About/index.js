@@ -4,15 +4,17 @@ import {
   Content,
   InfoColumn,
   ProfileColumn,
-  P,
+  H1,
   P2,
   P3,
   Span,
   Skills,
   SkillLogos,
+  SkillDiv,
+  SkillName,
 } from "./AboutStyles";
 
-import { DiCss3 } from "react-icons/di";
+import { DiCss3, DiNpm } from "react-icons/di";
 import { FaNodeJs } from "react-icons/fa";
 import {
   SiJavascript,
@@ -29,16 +31,20 @@ const About = () => {
       <AboutWrapper>
         <Content>
           <InfoColumn>
-            <P>
+            <H1>
               Hi, I am Donitha Michael, a <Span>Full Stack Web Developer</Span>{" "}
               based in Canada.
-            </P>
+            </H1>
             <P2>
               I began my journey as a self taught developer and learned to code
-              in my spare time. I worked as a<Span> junior dev trainee</Span>{" "}
-              for a few months and later joined Concordia's Full Stack
-              Development Bootcamp, which helped me learn many technologies in a
-              short period of time.
+              in my spare time. I completed a Udemy Full Stack Wed Development
+              course and I worked as a<Span> Junior Web Developer</Span> for a
+              few months. Later, I decided to join{" "}
+              <Span>Concordia's Full Stack Development Bootcamp,</Span> which
+              helped me learn many technologies in a short period of time. Now,
+              having completed two courses and with a 3-month professional work
+              experience, I am looking forward to taking up new roles and
+              challenges!
             </P2>
             <P2>
               I enjoy learning new technologies by building projects that spark
@@ -54,14 +60,42 @@ const About = () => {
             <Skills>
               <P3>Technologies</P3>
               <SkillLogos>
-                <SiHtml5 />
-                <DiCss3 />
-                <SiJavascript />
-                <SiReact />
-                <SiRedux />
-                <FaNodeJs />
-                <SiMongodb />
-                <SiBootstrap />
+                <SkillDiv>
+                  <SiHtml5 />
+                  <SkillName>HTML5</SkillName>
+                </SkillDiv>
+                <SkillDiv>
+                  <DiCss3 />
+                  <SkillName>CSS3</SkillName>
+                </SkillDiv>
+                <SkillDiv>
+                  <SiJavascript />
+                  <SkillName>JavaScript</SkillName>
+                </SkillDiv>
+                <SkillDiv>
+                  <DiNpm />
+                  <SkillName>NPM</SkillName>
+                </SkillDiv>
+                <SkillDiv>
+                  <SiReact />
+                  <SkillName>React.js</SkillName>
+                </SkillDiv>
+                <SkillDiv>
+                  <SiRedux />
+                  <SkillName>Redux</SkillName>
+                </SkillDiv>
+                <SkillDiv>
+                  <FaNodeJs />
+                  <SkillName>Node.js</SkillName>
+                </SkillDiv>
+                <SkillDiv>
+                  <SiMongodb />
+                  <SkillName>MongoDB</SkillName>
+                </SkillDiv>
+                <SkillDiv>
+                  <SiBootstrap />
+                  <SkillName>Bootstrap</SkillName>
+                </SkillDiv>
               </SkillLogos>
             </Skills>
           </InfoColumn>
