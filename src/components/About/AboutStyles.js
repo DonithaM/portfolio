@@ -43,6 +43,10 @@ export const InfoColumn = styled.div`
   border-radius: 20px;
   /* position: absolute;
   left: 50%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   z-index: 2;
   width: 80%;
   padding-right: 50px;
@@ -50,10 +54,12 @@ export const InfoColumn = styled.div`
   margin-bottom: 20px;
   @media screen and (max-width: 768px) {
     padding: 20px;
+    margin-top: 30px;
   }
 
   @media screen and (max-width: 500px) {
-    padding: 20px;
+    margin-top: 20px;
+    padding: 30px;
   }
 `;
 
@@ -130,15 +136,14 @@ export const ProfileColumn = styled.div`
 
 export const Skills = styled.div`
   display: flex;
+  justify-content: center;
   flex-direction: column;
 `;
 
 export const SkillLogos = styled.div`
   margin-top: 22px;
-  margin-left: 90px;
+  /* margin-left: 90px; */
   font-size: 35px;
-  display: flex;
-  justify-content: space-evenly;
   max-width: 600px;
   color: var(--green);
 
