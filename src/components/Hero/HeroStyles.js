@@ -115,7 +115,7 @@ export const P2 = styled.p`
   margin-top: 24px;
   color: #fff;
   max-width: 600px;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: normal;
   text-align: center;
 
