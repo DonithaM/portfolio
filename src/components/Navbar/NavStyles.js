@@ -29,7 +29,8 @@ export const NavWrapper = styled.div`
   height: 50px;
   z-index: 1;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1250px;
+  margin-right: 20px;
 `;
 
 export const Logo = styled(LinkRouter)`
@@ -41,11 +42,13 @@ export const Logo = styled(LinkRouter)`
   font-size: 2rem;
   text-decoration: none;
   font-weight: bold;
+  margin-left: 20px;
 `;
 
 export const Hamburger = styled.div`
   display: none;
   font-size: 2rem;
+  margin-right: 20px;
   @media screen and (max-width: 768px) {
     display: block;
     position: absolute;

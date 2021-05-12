@@ -3,13 +3,20 @@ import profile from "../../images/profile.png";
 
 export const AboutWrapper = styled.div`
   background: var(--light-bg);
-  height: 110vh;
+  height: auto;
   z-index: 1;
+  padding: 100px 0 50px 0;
 
   @media screen and (max-width: 1000px) {
     display: flex;
     flex-direction: column;
-    height: auto;
+    padding: 50px 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
   }
 
   /* @media screen and (max-width: 768px) {
@@ -32,6 +39,15 @@ export const Content = styled.div`
   height: 100%;
   width: auto;
   padding: 0 60px;
+  margin: 50px 0;
+
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+    height: auto;
+    padding-top: 50px;
+    margin: 0 20px;
+    width: 90vw;
+  }
 
   @media screen and (max-width: 768px) {
     display: flex;
@@ -47,8 +63,6 @@ export const Content = styled.div`
 export const InfoColumn = styled.div`
   color: var(--deep-blue);
   border-radius: 20px;
-  /* position: absolute;
-  left: 50%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,15 +72,15 @@ export const InfoColumn = styled.div`
   padding-right: 50px;
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 30px;
 
   @media screen and (max-width: 1000px) {
     padding: 20px;
-    margin-top: 30px;
+    margin-top: 0px;
     width: 100%;
   }
   @media screen and (max-width: 768px) {
-    padding: 20px;
-    margin-top: 30px;
+    margin-top: 10px;
     width: 100%;
   }
 
@@ -83,22 +97,22 @@ export const H1 = styled.h1`
   line-height: 3rem;
 
   @media screen and (max-width: 768px) {
-    font-size: 20px;
-    line-height: 2rem;
+    font-size: 30px;
+    line-height: 2.5rem;
   }
 
-  @media screen and (max-width: 500px) {
-    font-size: 20px;
+  @media screen and (max-width: 590px) {
+    font-size: 25px;
     line-height: 2rem;
   }
 `;
 
 export const P2 = styled.p`
   margin-top: 24px;
-  font-size: 16px;
+  font-size: 22px;
   text-align: center;
   font-weight: normal;
-  line-height: 1.9rem;
+  line-height: 2rem;
 
   /* @media screen and (max-width: 768px) {
     display: none;
@@ -131,6 +145,8 @@ export const ProfileColumn = styled.div`
   height: 370px;
   min-width: 280px;
 
+  /*   */
+
   @media screen and (max-width: 768px) {
     padding: 20px;
     z-index: 2;
@@ -158,31 +174,31 @@ export const SkillLogos = styled.div`
   margin-top: 22px;
   display: flex;
   /* margin-left: 90px; */
-  font-size: 35px;
+  font-size: 50px;
   /* max-width: 600px; */
   color: var(--green);
 
-  /* @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1000px) {
     width: 100%;
     flex-wrap: wrap;
     margin-top: 20px;
-    margin-left: 0px;
-    font-size: 30px;
-  } */
+    margin-left: 10px;
+    font-size: 50px;
+  }
 
   @media screen and (max-width: 768px) {
     width: 100%;
     flex-wrap: wrap;
     margin-top: 20px;
     margin-left: 0px;
-    font-size: 30px;
+    font-size: 40px;
   }
 
   @media screen and (max-width: 500px) {
     width: 100%;
     flex-wrap: wrap;
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 30px;
   }
 `;
 
@@ -205,6 +221,6 @@ export const SkillDiv = styled.div`
 `;
 
 export const SkillName = styled.p`
-  font-size: 12px;
+  font-size: 15px;
   font-weight: bold;
 `;
