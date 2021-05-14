@@ -72,7 +72,7 @@ export const InfoColumn = styled.div`
   padding-right: 50px;
   text-align: center;
   margin-bottom: 20px;
-  margin-top: 30px;
+  /* margin-top: 10px; */
 
   @media screen and (max-width: 1000px) {
     padding: 20px;
@@ -113,20 +113,12 @@ export const P2 = styled.p`
   text-align: center;
   font-weight: normal;
   line-height: 2rem;
-
-  /* @media screen and (max-width: 768px) {
-    display: none;
-  }
-
-  @media screen and (max-width: 500px) {
-    display: none;
-  } */
 `;
 
 export const P3 = styled.p`
   font-size: 20px;
   font-weight: bold;
-  margin-top: 30px;
+  margin-top: 40px;
 `;
 
 export const Span = styled.span`
@@ -139,13 +131,9 @@ export const ProfileColumn = styled.div`
     url(${profile}) no-repeat;
   border-right: 12px solid var(--green);
   border-left: 12px solid #fff;
-  /* padding: 15px; */
-  /* margin: 18px; */
   border-radius: 50%;
   height: 370px;
   min-width: 280px;
-
-  /*   */
 
   @media screen and (max-width: 768px) {
     padding: 20px;
@@ -173,9 +161,7 @@ export const Skills = styled.div`
 export const SkillLogos = styled.div`
   margin-top: 22px;
   display: flex;
-  /* margin-left: 90px; */
   font-size: 50px;
-  /* max-width: 600px; */
   color: var(--green);
 
   @media screen and (max-width: 1000px) {
@@ -209,15 +195,6 @@ export const SkillDiv = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* @media screen and (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-  }
-
-  @media screen and (max-width: 500px) {
-    display: flex;
-    flex-direction: column;
-  } */
 `;
 
 export const SkillName = styled.p`
