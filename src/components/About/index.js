@@ -32,24 +32,30 @@ const About = () => {
         <Content>
           <InfoColumn>
             <H1>
-              Hi, I am Donitha Michael, a <Span>Full Stack Web Developer</Span>{" "}
-              based in Canada.
+              -- Hi, I am Donitha Michael, a{" "}
+              <Span>Full Stack Web Developer</Span> based in Canada --
             </H1>
             <P2>
               I began my journey as a self taught developer and learned to code
-              in my spare time. I completed a Udemy Full Stack Wed Development
-              course and I worked as a<Span> Junior Web Developer</Span> for a
-              few months. Later, I decided to join{" "}
-              <Span>Concordia's Full Stack Development Bootcamp,</Span> which
-              helped me learn many technologies in a short period of time. Now,
-              having completed two courses and with a 3-month professional work
-              experience, I am looking forward to taking up new roles and
-              challenges!
+              in my spare time.
             </P2>
             <P2>
+              I completed a Udemy Full Stack Wed Development course and I worked
+              as a<Span> Junior Web Developer</Span> for a few months.
+            </P2>
+            <P2>
+              Later, I joined{" "}
+              <Span>Concordia's Full Stack Development Bootcamp,</Span> which
+              helped me learn many technologies in a short period of time.
+            </P2>
+            <P2>
+              I am now looking forward to taking up new roles and challenges!
+            </P2>
+
+            {/* <P2>
               I enjoy learning new technologies by building projects that spark
               my interest
-            </P2>
+            </P2> */}
             <P2>
               <Span>
                 In my spare time, I learn and enjoy expressing myself through
@@ -58,7 +64,7 @@ const About = () => {
             </P2>
 
             <Skills>
-              <P3>Technologies</P3>
+              <P3>Technologies I have used:</P3>
               <SkillLogos>
                 <SkillDiv>
                   <SiHtml5 />

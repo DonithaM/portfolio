@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SliderData from "./SliderData";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
-
+import { Link } from "react-router-dom";
 import {
   FeaturedWrapper,
   Title,
@@ -14,6 +14,12 @@ import {
   ImageSlide,
   BtnWrapper,
   Button,
+  Summary,
+  H1,
+  UL,
+  Stack,
+  Span,
+  DivLink,
 } from "./FeaturedStyles";
 
 const FeaturedProject = ({ slides }) => {
@@ -36,7 +42,7 @@ const FeaturedProject = ({ slides }) => {
   return (
     <>
       <FeaturedWrapper>
-        <Title>Featured Project</Title>
+        <Title>-- Featured Project --</Title>
         <Content>
           <ProjectSlider>
             <Left>
@@ -61,20 +67,51 @@ const FeaturedProject = ({ slides }) => {
             })}
           </ProjectSlider>
           <ProjectInfo>
-            <p>
-              Contrary to popular belief, Lorem Ipsum is not simply random text.
-              It has roots in a piece of classical Latin literature from 45 BC,
-              making it over 2000 years old. Richard McClintock, a Latin
-              professor at Hampden-Sydney College in Virginia, looked up one of
-              the more obscure Latin words, consectetur, from a Lorem Ipsum
-              passage, and going through the cites of the word in classical
-              literature, discovered the undoubtable source. Lorem Ipsum comes
-              from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et
-              Malorum" (The Extremes of Good and Evil) by Cicero, written in 45
-              BC. This book is a treatise on the theory of ethics, very popular
-              during the Renaissance. The first line of Lorem Ipsum, "Lorem
-              ipsum dolor sit amet..", comes from a line in section 1.10.32.
-            </p>
+            <Summary>
+              <H1>Take Me There</H1>
+            </Summary>
+            <UL>
+              <li>
+                Dynamic Full Stack Web Application (MERN) using Rest APIs and
+                CRUD functionalities
+              </li>
+              <li>
+                Application shows top hangout spots in Toronto including cafes,
+                restaurants, museums and other attractions
+              </li>
+              <li>Simple authentication for register and login</li>
+              <li>
+                Users can view reviews posted by other users and also create and
+                post their own reviews with images based on the events they
+                attended or places they visited
+              </li>
+            </UL>
+            <Stack>
+              <Span>Technologies Used</Span>: HTML, CSS, JavaScript, Express,
+              Node.js, React.js, Styled components, MongoDB, Cloudinary and
+              external APIs
+            </Stack>
+            <DivLink>
+              Watch a short Demo:{" "}
+              <Link
+                to={{
+                  pathname: "https://www.youtube.com/watch?v=9iN-z3mqbFs",
+                }}
+                target="_blank"
+              >
+                Link to Demo
+              </Link>
+            </DivLink>
+
+            <DivLink>
+              Go to my Github Repo:{" "}
+              <Link
+                to={{ pathname: "https://github.com/DonithaM/take_me_there" }}
+                target="_blank"
+              >
+                Link to repo
+              </Link>
+            </DivLink>
           </ProjectInfo>
         </Content>
         <BtnWrapper>

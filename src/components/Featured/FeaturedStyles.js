@@ -12,19 +12,23 @@ export const FeaturedWrapper = styled.div`
   margin-bottom: 40px;
   width: auto;
   padding-left: 10px;
-
-  /* @media screen and (max-width: 1000px) {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-  } */
 `;
 
 export const Title = styled.h1`
   padding-top: 80px;
+  font-size: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--deep-blue);
+  font-weight: normal;
+  @media screen and (max-width: 768px) {
+    font-size: 35px;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 30px;
+  }
 `;
 export const Content = styled.div`
   display: flex;
@@ -32,7 +36,7 @@ export const Content = styled.div`
   padding-top: 50px;
   margin: 0 50px;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1200px) {
     flex-direction: column;
   }
   @media screen and (max-width: 768px) {
@@ -44,13 +48,13 @@ export const Content = styled.div`
     margin: 0 10px;
   }
 `;
+
 export const ProjectSlider = styled.div`
   display: flex;
   position: relative;
   height: 100%;
   justify-content: center;
   align-items: center;
-  /* width: 900px; */
   padding-bottom: 50px;
 
   @media screen and (max-width: 1200px) {
@@ -60,10 +64,6 @@ export const ProjectSlider = styled.div`
   @media screen and (max-width: 768px) {
     width: 100%;
   }
-
-  /* @media screen and (max-width: 670px) {
-    width: 100%;
-  } */
 
   @media screen and (max-width: 400px) {
     width: auto;
@@ -142,11 +142,29 @@ export const ImageSlide = styled.div`
 `;
 
 export const ProjectInfo = styled.div`
-  color: red;
   margin: 0 20px 20px 50px;
   @media screen and (max-width: 768px) {
     margin-left: 20px;
   }
+`;
+
+export const Summary = styled.div``;
+export const H1 = styled.h1`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: var(--bright-pink);
+`;
+
+// export const H2 = styled.h2`
+//   margin-bottom: 10px;
+//   color: var(--deep-blue);
+// `;
+
+export const Description = styled.p`
+  color: var(--deep-blue);
+  font-weight: bold;
+  line-height: 1.5rem;
 `;
 
 export const BtnWrapper = styled.div`
@@ -174,4 +192,37 @@ export const Button = styled.button`
     transition-duration: 0.5s;
     transform: scale(1.05);
   }
+
+  &:active {
+    transform: scale(0.9);
+  }
+`;
+
+export const UL = styled.ul`
+  margin-left: 15px;
+  margin-top: 20px;
+  line-height: 2rem;
+  color: var(--green);
+  font-weight: normal;
+  font-size: 18px;
+`;
+
+export const Stack = styled.div`
+  margin: 30px 0;
+  font-size: 20px;
+  line-height: 2rem;
+`;
+
+export const Span = styled.span`
+  font-weight: bold;
+  color: var(--deep-blue);
+`;
+
+export const DivLink = styled.div`
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;

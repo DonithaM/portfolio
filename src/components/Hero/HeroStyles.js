@@ -135,7 +135,7 @@ export const Span = styled.span`
 `;
 
 export const BtnWrapper = styled.div`
-  margin-top: 30px;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -31,6 +31,7 @@ const Hero = () => {
             HTML | CSS | JavaScript | Node.js | Express | React.js | Redux |
             Bootstrap | MongoDB
           </P2>
+          <P2>Learn More</P2>
           <BtnWrapper>
             <BsArrowDown />
           </BtnWrapper>
