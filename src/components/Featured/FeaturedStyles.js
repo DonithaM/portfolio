@@ -16,19 +16,19 @@ export const FeaturedWrapper = styled.div`
 
 export const Title = styled.h1`
   padding-top: 80px;
-  font-size: 40px;
+  /* font-size: 40px; */
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--deep-blue);
   font-weight: normal;
-  @media screen and (max-width: 768px) {
+  /* @media screen and (max-width: 768px) {
     font-size: 35px;
   }
 
   @media screen and (max-width: 500px) {
     font-size: 30px;
-  }
+  } */
 `;
 export const Content = styled.div`
   display: flex;
@@ -220,4 +220,8 @@ export const DivLink = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  a {
+    text-decoration: none;
+    color: var(--bright-pink);
+  }
 `;

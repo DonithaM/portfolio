@@ -6,6 +6,7 @@ import Sidebar from "../components/Sidebar";
 import FeaturedProject from "../components/Featured";
 import SliderData from "../components/Featured/SliderData";
 import Contact from "../components/Contact";
+import Skills from "../components/Skills";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,6 +21,7 @@ const Home = () => {
       <Navbar toggleMenu={toggleMenu} />
       <Hero />
       <About />
+      <Skills />
       <FeaturedProject slides={SliderData} />
       <Contact />
     </>
