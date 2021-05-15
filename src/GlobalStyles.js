@@ -6,7 +6,7 @@ export default createGlobalStyle`
       --green: #3d6f38;
       --bright-pink: #f72585;
       --body-pink:#ffc2e2;
-      --deep-blue: #0e2036;
+      --deep-blue: #3d2d59;
       --light-bg: #ffeee3;
       --peach: #ffccac;
     }

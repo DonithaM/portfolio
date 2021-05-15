@@ -73,7 +73,7 @@ export const ProjectSlider = styled.div`
 
 export const Image = styled.img`
   width: 700px;
-  height: 500px;
+  height: 450px;
   border-radius: 10px;
   @media screen and (max-width: 1200px) {
     width: 500px;
@@ -94,7 +94,7 @@ export const Left = styled.div`
   z-index: 10;
   top: 50%;
   left: 5px;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: var(--bright-pink);
   cursor: pointer;
   user-select: none;
@@ -114,7 +114,7 @@ export const Right = styled.div`
   z-index: 10;
   top: 50%;
   right: 5px;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: var(--bright-pink);
   cursor: pointer;
   user-select: none;
@@ -156,11 +156,6 @@ export const H1 = styled.h1`
   color: var(--bright-pink);
 `;
 
-// export const H2 = styled.h2`
-//   margin-bottom: 10px;
-//   color: var(--deep-blue);
-// `;
-
 export const Description = styled.p`
   color: var(--deep-blue);
   font-weight: bold;
@@ -186,7 +181,7 @@ export const Button = styled.button`
   -webkit-box-shadow: 0px 1px 8px -1px rgba(247, 37, 133, 0.69);
   box-shadow: 0px 1px 8px -1px rgba(247, 37, 133, 0.69);
   cursor: pointer;
-  transition-duration: 0.5s ease;
+  transition: transform 250ms;
 
   &:hover {
     transition-duration: 0.5s;
@@ -221,6 +216,7 @@ export const Span = styled.span`
 export const DivLink = styled.div`
   margin: 10px 0;
   font-weight: bold;
+  color: var(--deep-blue);
   font-size: 18px;
   display: flex;
   justify-content: center;

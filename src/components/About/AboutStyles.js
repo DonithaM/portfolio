@@ -129,7 +129,7 @@ export const Span = styled.span`
 export const ProfileColumn = styled.div`
   background: linear-gradient(rgba(256, 204, 172, 0.1), rgba(0, 0, 0, 0.1)),
     url(${profile}) no-repeat;
-  border-right: 12px solid var(--green);
+  border-right: 12px solid #fff;
   border-left: 12px solid #fff;
   border-radius: 50%;
   height: 370px;

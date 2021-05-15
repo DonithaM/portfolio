@@ -5,6 +5,7 @@ import About from "../components/About";
 import Sidebar from "../components/Sidebar";
 import FeaturedProject from "../components/Featured";
 import SliderData from "../components/Featured/SliderData";
+import Contact from "../components/Contact";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +21,7 @@ const Home = () => {
       <Hero />
       <About />
       <FeaturedProject slides={SliderData} />
-      <About />
+      <Contact />
     </>
   );
 };
