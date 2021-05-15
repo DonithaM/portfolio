@@ -64,7 +64,7 @@ const About = () => {
             </P2>
 
             <Skills>
-              <P3>Technologies I have used:</P3>
+              <P3>My Tech Stack:</P3>
               <SkillLogos>
                 <SkillDiv>
                   <SiHtml5 />

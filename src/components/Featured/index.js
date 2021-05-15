@@ -92,7 +92,7 @@ const FeaturedProject = ({ slides }) => {
               external APIs
             </Stack>
             <DivLink>
-              Watch a short Demo:{" "}
+              Watch a short Demo :{" "}
               <Link
                 to={{
                   pathname: "https://www.youtube.com/watch?v=9iN-z3mqbFs",
@@ -104,7 +104,7 @@ const FeaturedProject = ({ slides }) => {
             </DivLink>
 
             <DivLink>
-              Go to my Github Repo:{" "}
+              Go to Github Repo :{" "}
               <Link
                 to={{ pathname: "https://github.com/DonithaM/take_me_there" }}
                 target="_blank"
