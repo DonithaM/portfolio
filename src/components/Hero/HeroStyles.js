@@ -99,7 +99,7 @@ export const P = styled.p`
   margin-top: 24px;
   color: #fff;
   max-width: 600px;
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
 
   @media screen and (max-width: 768px) {

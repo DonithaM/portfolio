@@ -33,7 +33,7 @@ export const Title = styled.h1`
 export const Content = styled.div`
   display: flex;
   justify-content: space-evenly;
-  padding-top: 50px;
+  padding-top: 30px;
   margin: 0 50px;
 
   @media screen and (max-width: 1200px) {
@@ -55,7 +55,6 @@ export const ProjectSlider = styled.div`
   height: 100%;
   justify-content: center;
   align-items: center;
-  padding-bottom: 50px;
 
   @media screen and (max-width: 1200px) {
     width: auto;
