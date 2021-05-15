@@ -1,4 +1,9 @@
 import React from "react";
+import selfTaught from "../../images/self-taught.svg";
+import progress from "../../images/progress.svg";
+import study from "../../images/study.svg";
+import job from "../../images/job.svg";
+
 import {
   AboutWrapper,
   Content,
@@ -8,10 +13,13 @@ import {
   P2,
   P3,
   Span,
+  TitleSpan,
   Skills,
   SkillLogos,
   SkillDiv,
   SkillName,
+  Img,
+  Div,
 } from "./AboutStyles";
 
 import { DiCss3, DiNpm } from "react-icons/di";
@@ -32,38 +40,50 @@ const About = () => {
         <Content>
           <InfoColumn>
             <H1>
-              -- Hi, I am Donitha Michael, a{" "}
-              <Span>Full Stack Web Developer</Span> based in Canada --
+              {/* -- Hi, I am Donitha Michael, a{" "}
+              <TitleSpan>Full Stack Web Developer</TitleSpan> based in Canada -- */}
+              -- My Journey into Web Development--
             </H1>
-            <P2>
-              I began my journey as a self taught developer and learned to code
-              in my spare time.
-            </P2>
-            <P2>
-              I completed a Udemy Full Stack Wed Development course and I worked
-              as a<Span> Junior Web Developer</Span> for a few months.
-            </P2>
-            <P2>
-              Later, I joined{" "}
-              <Span>Concordia's Full Stack Development Bootcamp,</Span> which
-              helped me learn many technologies in a short period of time.
-            </P2>
-            <P2>
-              I am now looking forward to taking up new roles and challenges!
-            </P2>
+            <Div>
+              <Img src={selfTaught} />
+              <P2>
+                I began my journey as a self taught developer and learned to
+                code in my spare time.
+              </P2>
+            </Div>
+            <Div>
+              <P2>
+                I completed a Udemy Full Stack Wed Development course and I
+                worked as a<Span> Junior Web Developer</Span> for a few months.
+              </P2>
+              <Img src={progress} />
+            </Div>
+            <Div>
+              <Img src={study} />
+              <P2>
+                Later, I joined{" "}
+                <Span>Concordia's Full Stack Development Bootcamp,</Span> which
+                helped me learn many technologies in a short period of time.
+              </P2>
+            </Div>
+            <Div>
+              <P2>
+                I enjoy learning new technologies by building projects that
+                spark my interest. I now look forward to taking up{" "}
+                <Span>new roles and challenges!</Span>
+              </P2>
+              <Img src={job} />
+            </Div>
+            <div></div>
 
             {/* <P2>
-              I enjoy learning new technologies by building projects that spark
-              my interest
-            </P2> */}
-            <P2>
               <Span>
                 In my spare time, I learn and enjoy expressing myself through
                 classical dance.
               </Span>
-            </P2>
+            </P2> */}
 
-            <Skills>
+            {/* <Skills>
               <P3>My Tech Stack:</P3>
               <SkillLogos>
                 <SkillDiv>
@@ -103,7 +123,7 @@ const About = () => {
                   <SkillName>Bootstrap</SkillName>
                 </SkillDiv>
               </SkillLogos>
-            </Skills>
+            </Skills> */}
           </InfoColumn>
           <ProfileColumn></ProfileColumn>
         </Content>

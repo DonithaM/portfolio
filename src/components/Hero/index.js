@@ -12,19 +12,15 @@ import {
   HeroBg,
   Span,
 } from "./HeroStyles";
-//import Video from "../../bgVideo/video.mp4";
 
 import { BsArrowDown } from "react-icons/bs";
 
 const Hero = () => {
   return (
     <HeroWrapper>
-      <HeroBg>
-        {/* <VideoWrapper autoPlay loop muted src={Video} type="video/mp4" />
-        background Image if needed */}
-      </HeroBg>
-      <Div>
-        <Content>
+      <HeroBg />
+      <Content>
+        <Div>
           <H1>Hi, I am Donitha Michael</H1>
           <P>
             I am{" "}
@@ -55,8 +51,8 @@ const Hero = () => {
           <BtnWrapper>
             <BsArrowDown />
           </BtnWrapper>
-        </Content>
-      </Div>
+        </Div>
+      </Content>
     </HeroWrapper>
   );
 };

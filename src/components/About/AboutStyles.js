@@ -2,7 +2,13 @@ import styled from "styled-components";
 import profile from "../../images/profile.png";
 
 export const AboutWrapper = styled.div`
-  background: var(--light-bg);
+  background: #fff;
+  /* background: rgb(255, 236, 224);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 236, 224, 1) 10%,
+    rgba(255, 255, 255, 1) 50%
+  ); */
   height: auto;
   z-index: 1;
   padding: 100px 0 50px 0;
@@ -39,7 +45,7 @@ export const Content = styled.div`
   height: 100%;
   width: auto;
   padding: 0 60px;
-  margin: 50px 0;
+  margin: 10px 0;
 
   @media screen and (max-width: 1000px) {
     flex-direction: column;
@@ -107,12 +113,34 @@ export const H1 = styled.h1`
   }
 `;
 
+export const Img = styled.img`
+  margin-top: 50px;
+  height: 100px;
+`;
+
+export const Div = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
 export const P2 = styled.p`
-  margin-top: 24px;
+  margin-top: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
   font-size: 22px;
   text-align: center;
   font-weight: normal;
-  line-height: 2rem;
+  line-height: 1.8rem;
+
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+    line-height: 1.4rem;
+  }
+
+  @media screen and (max-width: 590px) {
+    font-size: 16px;
+    line-height: 1.22rem;
+  }
 `;
 
 export const P3 = styled.p`
@@ -121,16 +149,21 @@ export const P3 = styled.p`
   margin-top: 40px;
 `;
 
-export const Span = styled.span`
+export const TitleSpan = styled.span`
   color: var(--bright-pink);
+  font-weight: bold;
+`;
+
+export const Span = styled.span`
+  color: var(--green);
   font-weight: bold;
 `;
 
 export const ProfileColumn = styled.div`
   background: linear-gradient(rgba(256, 204, 172, 0.1), rgba(0, 0, 0, 0.1)),
     url(${profile}) no-repeat;
-  border-right: 12px solid #fff;
-  border-left: 12px solid #fff;
+  border-right: 12px solid var(--green);
+  border-left: 12px solid var(--peach);
   border-radius: 50%;
   height: 370px;
   min-width: 280px;

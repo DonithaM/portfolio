@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import profile from "../../images/profile.png";
 import bg from "../../images/bg.jpg";
 
 export const HeroWrapper = styled.div`
@@ -30,33 +31,52 @@ export const HeroBg = styled.div`
   left: 0;
 `;
 
-// export const VideoWrapper = styled.video`
-//   background: red;
-//   height: 100%;
-//   width: 100%;
-//   -o-object-fit: cover;
-//   object-fit: cover;
-// `;
-
 export const Div = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 `;
+export const ProfileColumn = styled.div`
+  background: linear-gradient(rgba(256, 204, 172, 0.1), rgba(0, 0, 0, 0.1)),
+    url(${profile}) no-repeat;
+  border-right: 12px solid #fff;
+  border-left: 12px solid #fff;
+  border-radius: 50%;
+  height: 350px;
+  min-width: 280px;
+  z-index: 2;
+
+  @media screen and (max-width: 768px) {
+    padding: 20px;
+    z-index: 2;
+    height: 320px;
+    min-width: 280px;
+    margin-bottom: 50px;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 20px;
+    z-index: 2;
+    height: 320px;
+    min-width: 280px;
+    margin-bottom: 50px;
+  }
+`;
 
 export const Content = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  /* flex-direction: column; */
+  justify-content: space-evenly;
   align-items: center;
   max-width: 1200px;
-
+  width: 100%;
+  height: auto;
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.45); /* Black w/opacity/see-through */
   color: white;
   font-weight: bold;
-  border: 3px solid #f1f1f1;
+  /* border: 3px solid #f1f1f1; */
   border-radius: 20px;
   position: absolute;
   top: 68%;
@@ -67,6 +87,8 @@ export const Content = styled.div`
   padding: 20px;
   text-align: center;
   margin-bottom: 20px;
+  -webkit-box-shadow: -1px 2px 15px 5px rgba(255, 204, 172, 0.5);
+  box-shadow: -1px 2px 15px 5px rgba(255, 204, 172, 0.5);
   @media screen and (max-width: 1200px) {
     top: 62%;
     width: 70%;
@@ -96,7 +118,7 @@ export const H1 = styled.h1`
 `;
 
 export const P = styled.p`
-  margin-top: 24px;
+  margin-top: 20px;
   color: #fff;
   max-width: 600px;
   font-size: 25px;
