@@ -93,24 +93,22 @@ const FeaturedProject = ({ slides }) => {
             </Stack>
             <DivLink>
               Watch a short Demo :{" "}
-              <Link
-                to={{
-                  pathname: "https://www.youtube.com/watch?v=9iN-z3mqbFs",
-                }}
+              <a
+                href="https://www.youtube.com/watch?v=9iN-z3mqbFs"
                 target="_blank"
               >
                 Link to Demo
-              </Link>
+              </a>
             </DivLink>
 
             <DivLink>
               Go to Github Repo :{" "}
-              <Link
-                to={{ pathname: "https://github.com/DonithaM/take_me_there" }}
+              <a
+                href="https://github.com/DonithaM/take_me_there"
                 target="_blank"
               >
                 Link to repo
-              </Link>
+              </a>
             </DivLink>
           </ProjectInfo>
         </Content>

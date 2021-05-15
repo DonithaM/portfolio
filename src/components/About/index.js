@@ -47,8 +47,12 @@ const About = () => {
             <Div>
               <Img src={selfTaught} />
               <P2>
-                I began my journey as a self taught developer and learned to
-                code in my spare time.
+                After pursuing a{" "}
+                <Span>
+                  Master's Degree in Electrical and Computer Engineering
+                </Span>{" "}
+                from Concordia University, I began my journey as a self taught
+                developer and learned to code in my spare time.
               </P2>
             </Div>
             <Div>
@@ -74,7 +78,6 @@ const About = () => {
               </P2>
               <Img src={job} />
             </Div>
-            <div></div>
 
             {/* <P2>
               <Span>

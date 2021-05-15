@@ -30,7 +30,7 @@ export const Title = styled.div`
 `;
 
 export const H1 = styled.h1`
-  font-size: 40px;
+  /* font-size: 40px; */
   color: var(--deep-blue);
   font-weight: normal;
 `;
