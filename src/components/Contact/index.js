@@ -21,7 +21,7 @@ import {
 const Contact = () => {
   return (
     <>
-      <ContactWrapper>
+      <ContactWrapper id={"contact"}>
         <Title>
           <H1>-- Let's work together --</H1>
         </Title>

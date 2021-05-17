@@ -1,5 +1,6 @@
 import React from "react";
 import Typical from "react-typical";
+import { animateScroll as scroll } from "react-scroll";
 
 import {
   HeroWrapper,
@@ -16,6 +17,9 @@ import {
 import { BsArrowDown } from "react-icons/bs";
 
 const Hero = () => {
+  // const scrollToAbout = () => {
+  //   scroll.scrollTo("100vh");
+  // };
   return (
     <HeroWrapper>
       <HeroBg />
@@ -29,13 +33,13 @@ const Hero = () => {
                 loop={Infinity}
                 wrapper="b"
                 steps={[
-                  "a Full-Stack Developer",
-                  1500,
-                  "a Front-End Developer",
+                  "a Web Developer",
                   1500,
                   "a Fast Learner",
                   1500,
                   "a Problem Solver",
+                  1500,
+                  "a committed Team Player",
                   1500,
                   "a Classical Dancer",
                   1500,

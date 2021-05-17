@@ -39,10 +39,14 @@ export const Logo = styled(LinkRouter)`
   color: var(--bright-pink);
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-decoration: none;
   font-weight: bold;
   margin-left: 20px;
+  &:hover {
+    color: var(--deep-blue);
+    transition-duration: 0.5s;
+  }
 `;
 
 export const Hamburger = styled.div`

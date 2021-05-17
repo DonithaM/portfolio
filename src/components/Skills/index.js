@@ -14,7 +14,7 @@ import Diploma from "../../images/Concordia_Diploma.pdf";
 const Skills = () => {
   return (
     <>
-      <SkillsWrapper>
+      <SkillsWrapper id={"skills"}>
         <H1>-- My Skills --</H1>
 
         <CardsWrapper>

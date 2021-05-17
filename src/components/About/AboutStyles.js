@@ -3,26 +3,20 @@ import profile from "../../images/profile.png";
 
 export const AboutWrapper = styled.div`
   background: #fff;
-  /* background: rgb(255, 236, 224);
-  background: linear-gradient(
-    0deg,
-    rgba(255, 236, 224, 1) 10%,
-    rgba(255, 255, 255, 1) 50%
-  ); */
   height: auto;
   z-index: 1;
-  padding: 100px 0 50px 0;
+  padding: 60px 0 50px 0;
 
   @media screen and (max-width: 1000px) {
     display: flex;
     flex-direction: column;
-    padding: 50px 0;
+    padding: 0;
   }
 
   @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
-    padding-top: 40px;
+    padding-top: 0;
   }
 
   /* @media screen and (max-width: 768px) {
@@ -115,7 +109,7 @@ export const H1 = styled.h1`
 
 export const Img = styled.img`
   margin-top: 50px;
-  height: 100px;
+  height: 90px;
 `;
 
 export const Div = styled.div`
@@ -124,10 +118,10 @@ export const Div = styled.div`
 `;
 
 export const P2 = styled.p`
-  margin-top: 50px;
+  margin-top: 42px;
   margin-left: 40px;
   margin-right: 40px;
-  font-size: 22px;
+  font-size: 20px;
   text-align: center;
   font-weight: normal;
   line-height: 1.8rem;

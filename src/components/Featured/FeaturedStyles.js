@@ -15,7 +15,7 @@ export const FeaturedWrapper = styled.div`
 `;
 
 export const Title = styled.h1`
-  padding-top: 80px;
+  padding-top: 65px;
   /* font-size: 40px; */
   display: flex;
   align-items: center;

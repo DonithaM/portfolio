@@ -13,13 +13,13 @@ export const SkillsWrapper = styled.div`
   @media screen and (max-width: 1000px) {
     display: flex;
     flex-direction: column;
-    padding: 50px 0;
+    padding: 60px 0;
   }
 
   @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
-    padding-top: 40px;
+    padding-top: 70px;
   }
 `;
 
@@ -27,6 +27,7 @@ export const H1 = styled.h1`
   text-align: center;
   font-weight: normal;
   line-height: 3rem;
+  color: var(--deep-blue);
 
   @media screen and (max-width: 768px) {
     font-size: 30px;
@@ -50,7 +51,7 @@ export const Card = styled.div`
   overflow: hidden;
   text-align: center;
   width: 300px;
-  margin: 30px;
+  margin: 25px;
   border-radius: 15px;
 `;
 export const Title = styled.h2`
