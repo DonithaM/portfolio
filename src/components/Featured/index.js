@@ -41,7 +41,7 @@ const FeaturedProject = ({ slides }) => {
   console.log(currentImage);
   return (
     <>
-      <FeaturedWrapper>
+      <FeaturedWrapper id={"project"}>
         <Title>-- Featured Project --</Title>
         <Content>
           <ProjectSlider>

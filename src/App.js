@@ -5,18 +5,23 @@ import styled from "styled-components";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Home from "./pages";
+import About from "./components/About";
 
 const App = () => {
   return (
     <BrowserRouter>
       <GlobalStyles />
-      {/* <div>
+      <div>
         <Switch>
-          <Route exact path="/navbar"> */}
-      <Home />
-      {/* </Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          {/* <Route exact path="/about">
+            <About />
+          </Route>
+           */}
         </Switch>
-      </div> */}
+      </div>
     </BrowserRouter>
   );
 };

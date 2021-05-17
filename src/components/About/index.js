@@ -36,7 +36,7 @@ import {
 const About = () => {
   return (
     <>
-      <AboutWrapper>
+      <AboutWrapper id={"about"}>
         <Content>
           <InfoColumn>
             <H1>
