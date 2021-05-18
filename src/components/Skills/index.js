@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
 import {
   SkillsWrapper,
   H1,
@@ -12,12 +13,14 @@ import {
 import Diploma from "../../images/Concordia_Diploma.pdf";
 
 const Skills = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <>
       <SkillsWrapper id={"skills"}>
         <H1>-- My Skills --</H1>
-
-        <CardsWrapper>
+        <CardsWrapper data-aos="fade-up">
           <Card>
             <Title>Front-End</Title>
             <Items>

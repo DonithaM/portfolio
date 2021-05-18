@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import SliderData from "./SliderData";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
-import { Link } from "react-router-dom";
+
 import {
   FeaturedWrapper,
   Title,
