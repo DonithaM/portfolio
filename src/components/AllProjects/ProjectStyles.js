@@ -1,20 +1,23 @@
+import { DiVisualstudio } from "react-icons/di";
 import styled from "styled-components";
 
-export const FeaturedWrapper = styled.div`
-  background: rgb(255, 236, 224);
+export const ProjectsWrapper = styled.div`
+  height: 100vh;
+  background: rgb(255, 223, 203);
   background: linear-gradient(
     180deg,
-    rgba(255, 236, 224, 1) 28%,
-    rgba(255, 255, 255, 1) 76%
+    rgba(255, 223, 203, 1) 0%,
+    rgba(255, 255, 255, 1) 48%,
+    rgba(255, 217, 237, 1) 100%
   );
   height: auto;
   z-index: 1;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
   width: auto;
   padding-left: 10px;
 `;
 
-export const Title = styled.h1`
+export const H1 = styled.h1`
   padding-top: 65px;
   display: flex;
   align-items: center;
@@ -22,6 +25,7 @@ export const Title = styled.h1`
   color: var(--deep-blue);
   font-weight: normal;
 `;
+
 export const Content = styled.div`
   display: flex;
   justify-content: space-evenly;
@@ -43,7 +47,7 @@ export const Content = styled.div`
 
 export const ProjectSlider = styled.div`
   display: flex;
-  position: relative;
+  /* position: relative; */
   height: 100%;
   justify-content: center;
   align-items: center;
@@ -80,6 +84,20 @@ export const Image = styled.img`
     height: 300px;
   }
 `;
+export const ImageSlide = styled.div`
+  opacity: 0;
+  transition-duration: 1s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.05);
+  }
+`;
 
 export const Left = styled.div`
   position: absolute;
@@ -92,13 +110,16 @@ export const Left = styled.div`
   user-select: none;
   @media screen and (max-width: 1200px) {
     font-size: 2rem;
+    top: 55%;
   }
   @media screen and (max-width: 768px) {
     font-size: 1.7rem;
+    top: 60%;
   }
 
   @media screen and (max-width: 500px) {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    top: 65%;
   }
 `;
 export const Right = styled.div`
@@ -112,52 +133,74 @@ export const Right = styled.div`
   user-select: none;
   @media screen and (max-width: 1200px) {
     font-size: 2rem;
+    top: 55%;
   }
   @media screen and (max-width: 768px) {
     font-size: 1.7rem;
+    top: 60%;
   }
 
   @media screen and (max-width: 500px) {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    top: 65%;
   }
 `;
 
-export const ImageSlide = styled.div`
-  opacity: 0;
-  transition-duration: 1s ease;
-
-  &.active {
-    opacity: 1;
-    transition-duration: 1s;
-    transform: scale(1.05);
-  }
+export const Div = styled.div`
+  position: relative;
+  padding-bottom: 50px;
 `;
+export const Sliders = styled.div``;
 
 export const ProjectInfo = styled.div`
-  margin: 0 20px 20px 50px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   @media screen and (max-width: 768px) {
     margin-left: 20px;
   }
+  h2 {
+    color: var(--bright-pink);
+    margin-bottom: 20px;
+  }
 `;
 
-export const Summary = styled.div``;
-export const H1 = styled.h1`
+export const ProjectContent = styled.div`
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
-  color: var(--bright-pink);
-`;
-
-export const Description = styled.p`
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  line-height: 1.5rem;
   color: var(--deep-blue);
   font-weight: bold;
-  line-height: 1.5rem;
+  a {
+    padding-top: 15px;
+    text-decoration: none;
+  }
+`;
+
+export const Note = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+  p {
+    padding-top: 20px;
+  }
+  span {
+    font-weight: bold;
+  }
 `;
 
 export const BtnWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 20px;
 `;
 
 export const Button = styled.button`
@@ -182,39 +225,5 @@ export const Button = styled.button`
 
   &:active {
     transform: scale(0.9);
-  }
-`;
-
-export const UL = styled.ul`
-  margin-left: 15px;
-  margin-top: 20px;
-  line-height: 2rem;
-  color: var(--green);
-  font-weight: normal;
-  font-size: 18px;
-`;
-
-export const Stack = styled.div`
-  margin: 30px 0;
-  font-size: 20px;
-  line-height: 2rem;
-`;
-
-export const Span = styled.span`
-  font-weight: bold;
-  color: var(--deep-blue);
-`;
-
-export const DivLink = styled.div`
-  margin: 10px 0;
-  font-weight: bold;
-  color: var(--deep-blue);
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  a {
-    text-decoration: none;
-    color: var(--bright-pink);
   }
 `;

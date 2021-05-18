@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import SliderData from "./SliderData";
+import { useHistory } from "react-router-dom";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 
 import {
@@ -23,8 +24,14 @@ import {
 } from "./FeaturedStyles";
 
 const FeaturedProject = ({ slides }) => {
+  const history = useHistory();
+
   const [currentImage, setCurrentImage] = useState(0);
   const length = slides.length;
+
+  const handleRoute = () => {
+    history.push("/projects");
+  };
 
   if (!Array.isArray(slides) || slides.length <= 0) {
     return null;
@@ -113,7 +120,7 @@ const FeaturedProject = ({ slides }) => {
           </ProjectInfo>
         </Content>
         <BtnWrapper>
-          <Button>View more Projects</Button>
+          <Button onClick={handleRoute}>View more Projects</Button>
         </BtnWrapper>
       </FeaturedWrapper>
     </>

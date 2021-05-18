@@ -44,7 +44,7 @@ const Sidebar = ({ isOpen, toggleMenu }) => {
             exact="true"
             onClick={toggleMenu}
           >
-            Featured
+            Projects
           </SidebarLink>
           <SidebarLink
             to="contact"
