@@ -59,7 +59,7 @@ const Navbar = ({ toggleMenu }) => {
                 spy={true}
                 exact="true"
               >
-                Featured
+                Projects
               </NavLinks>
             </NavItem>
             <NavItem>

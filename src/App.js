@@ -1,11 +1,10 @@
 import React from "react";
-// import "./App.css";
+import GroupSlider from "./components/AllProjects/ProjectsSlider";
 import GlobalStyles from "./GlobalStyles";
-import styled from "styled-components";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Home from "./pages";
-import About from "./components/About";
+import Projects from "./components/AllProjects";
 
 const App = () => {
   return (
@@ -16,10 +15,9 @@ const App = () => {
           <Route exact path="/">
             <Home />
           </Route>
-          {/* <Route exact path="/about">
-            <About />
+          <Route exact path="/projects">
+            <Projects slides={GroupSlider} />
           </Route>
-           */}
         </Switch>
       </div>
     </BrowserRouter>
