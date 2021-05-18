@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import dev from "../../images/dev.svg";
 import Pdf from "../../images/Donitha_Resume.pdf";
 import { HiOutlineMail } from "react-icons/hi";
-
+import Aos from "aos";
 import {
   ContactWrapper,
   Title,
@@ -19,6 +19,9 @@ import {
 } from "./ContactStyles";
 
 const Contact = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
   return (
     <>
       <ContactWrapper id={"contact"}>
@@ -26,7 +29,7 @@ const Contact = () => {
           <H1>-- Let's work together --</H1>
         </Title>
         <Icon>
-          <Img src={dev} />
+          <Img src={dev} data-aos="fade-in" />
         </Icon>
         <Content>
           <Div>

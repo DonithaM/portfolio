@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import selfTaught from "../../images/self-taught.svg";
 import progress from "../../images/progress.svg";
 import study from "../../images/study.svg";
 import job from "../../images/job.svg";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import {
   AboutWrapper,
@@ -34,6 +36,9 @@ import {
 } from "react-icons/si";
 
 const About = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
   return (
     <>
       <AboutWrapper id={"about"}>
@@ -44,7 +49,7 @@ const About = () => {
               <TitleSpan>Full Stack Web Developer</TitleSpan> based in Canada -- */}
               -- My Journey into Web Development--
             </H1>
-            <Div>
+            <Div data-aos="fade-in">
               <Img src={selfTaught} />
               <P2>
                 After pursuing a{" "}
@@ -55,14 +60,14 @@ const About = () => {
                 developer and learned to code in my spare time.
               </P2>
             </Div>
-            <Div>
+            <Div data-aos="fade-in">
               <P2>
                 I completed a Udemy Full Stack Wed Development course and I
                 worked as a<Span> Junior Web Developer</Span> for a few months.
               </P2>
               <Img src={progress} />
             </Div>
-            <Div>
+            <Div data-aos="fade-in">
               <Img src={study} />
               <P2>
                 Later, I joined{" "}
@@ -70,7 +75,7 @@ const About = () => {
                 helped me learn many technologies in a short period of time.
               </P2>
             </Div>
-            <Div>
+            <Div data-aos="fade-in">
               <P2>
                 I enjoy learning new technologies by building projects that
                 spark my interest. I now look forward to taking up{" "}
@@ -128,7 +133,7 @@ const About = () => {
               </SkillLogos>
             </Skills> */}
           </InfoColumn>
-          <ProfileColumn></ProfileColumn>
+          <ProfileColumn data-aos="fade-up"></ProfileColumn>
         </Content>
       </AboutWrapper>
     </>

@@ -3,12 +3,6 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaRegFilePdf } from "react-icons/fa";
 
 export const ContactWrapper = styled.div`
-  /* background: rgb(255, 236, 224);
-  background: linear-gradient(
-    0deg,
-    rgba(255, 236, 224, 1) 28%,
-    rgba(255, 255, 255, 1) 70%
-  ); */
   background: rgb(255, 194, 226);
   background: linear-gradient(
     0deg,

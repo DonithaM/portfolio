@@ -97,10 +97,6 @@ export const NavLinks = styled(LinkScroll)`
   cursor: pointer;
   transition: 0.2s ease-in-out; //for out
 
-  &.active {
-    border-bottom: 3px solid red;
-  }
-
   &:hover {
     color: var(--bright-pink);
     transition: 0.2s ease-in-out; //both in and out

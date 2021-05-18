@@ -72,6 +72,7 @@ export const ProjectSlider = styled.div`
 
 export const Image = styled.img`
   width: 700px;
+  margin-bottom: 50px;
   height: 450px;
   border-radius: 10px;
   @media screen and (max-width: 1200px) {
