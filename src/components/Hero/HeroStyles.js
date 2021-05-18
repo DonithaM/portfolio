@@ -163,7 +163,7 @@ export const BtnWrapper = styled.div`
   align-items: center;
   color: var(--bright-pink);
   font-size: 40px;
-  cursor: pointer;
+  /* cursor: pointer; */
   @media screen and (max-width: 768px) {
     margin-top: 10px;
     font-size: 27px;
