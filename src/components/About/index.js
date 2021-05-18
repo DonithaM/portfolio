@@ -62,7 +62,7 @@ const About = () => {
             </Div>
             <Div data-aos="fade-in">
               <P2>
-                I completed a Udemy Full Stack Wed Development course and I
+                I completed a Udemy Full Stack Web Development course and I
                 worked as a<Span> Junior Web Developer</Span> for a few months.
               </P2>
               <Img src={progress} />
