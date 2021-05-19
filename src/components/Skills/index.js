@@ -68,6 +68,16 @@ const Skills = () => {
           <p>Concordia's Full Stack Web Development Diploma : </p>
           <a href={Diploma}>View Certificate</a>
         </CertsWrapper>
+        <CertsWrapper>
+          <p>TestDome HTML/CSS and JavaScript Certificate : </p>
+          <a
+            href="https://app.testdome.com/cert/df98653e26e8442a8a0f402ca6f8e709"
+            class="testdome-certificate-stamp silver"
+            target="_blank"
+          >
+            View Certificate
+          </a>
+        </CertsWrapper>
       </SkillsWrapper>
     </>
   );
