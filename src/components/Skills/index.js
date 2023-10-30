@@ -28,6 +28,7 @@ const Skills = () => {
               <li>CSS</li>
               <li>Bootstrap</li>
               <li>JavaScript</li>
+              <li>TypeScript</li>
               <li>jQuery</li>
               <li>React</li>
               <li>Redux</li>
